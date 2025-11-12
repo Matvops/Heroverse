@@ -1,0 +1,22 @@
+{
+  "name": "heroverse",
+  "version": "1.0.0",
+  "description": "Projeto para fins de aprendizado",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Matvops/Heroverse.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Matheus Cadenassi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Matvops/Heroverse/issues"
+  },
+  "homepage": "https://github.com/Matvops/Heroverse#readme"
+}
