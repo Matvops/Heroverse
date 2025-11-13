@@ -18,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/Matvops/Heroverse/issues"
   },
-  "homepage": "https://github.com/Matvops/Heroverse#readme"
+  "homepage": "https://github.com/Matvops/Heroverse#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.1"
+  }
 }
