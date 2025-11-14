@@ -28,6 +28,15 @@
     color: #1F6FEB;
 }
 
+.text-tertiary-color {
+    color: #E63946;
+}
+
+.text-tertiary-color:hover {
+    color: #1F6FEB;
+
+}
+
 .button-primary-color {
     background-color: #E63946;
 }
@@ -38,6 +47,11 @@
 
 .cursor-pointer {
     cursor: pointer;
+}
+
+.reset-input {
+    border: none;
+    outline: none;
 }
 
 
