@@ -2,7 +2,7 @@
   "name": "heroverse",
   "version": "1.0.0",
   "description": "Projeto para fins de aprendizado",
-  "main": "index.js",
+  "default": "index.html",
   "scripts": {
     "test": "test"
   },

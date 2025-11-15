@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="/styles/home.css">
     <link rel="shortcut icon" href="/assets/woman-superhero-svgrepo-com.svg" type="image/x-icon">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <script src="imports.js"></script>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/js/bootstrap.min.js">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <script src="service/HomeService.js" type="module"></script>
 </head>
-<body class="w-50 background-primary-color montserrat mx-auto">
+<body class="w-75 background-primary-color montserrat mx-auto">
     
-    <header class="text-primary-color mx-auto py-5 d-flex align-items-end justify-content-between px-4">
-        <h1 class="text-uppercase fs-1 fw-semibold">Heroicon</h1>
+    <header class="container text-primary-color mx-auto py-5 d-flex align-items-end justify-content-between px-4">
+        <h1 class="text-uppercase fs-1 fw-semibold">Heroverse</h1>
         <nav class="w-25">
             <ul class="list-unstyled d-flex align-items-end justify-content-between fs-4">
                 <li class="text-secondary-color cursor-pointer">HOME</li>
@@ -21,5 +23,32 @@
         </nav>
     </header>
 
+    <div class="mx-auto" style="max-width: 1500px;">
+        <div class="mx-auto text-center my-4 w-75 background-secondary-color border-primary-color reset-input text-primary-color rounded d-flex align-items-center p-3">
+            <input placeholder="Pesquisar" type="text" class="w-100 background-secondary-color border-primary-color reset-input text-primary-color rounded">
+            <i class="bi bi-search size-20"></i>
+        </div>
+    </div>
+
+    <main class="mx-5">
+        <ul class="list-unstyled d-flex flex-wrap mx-5 justify-content-around">
+            <li style="min-width: 250px;" class="w-25 background-secondary-color rounded d-flex flex-column justify-content-center align-items-center py-4">
+                <img class="w-75 mb-5" src="assets/woman-superhero-svgrepo-com.svg" alt="">
+                <h2 class="text-primary-color">SUPERHERO</h2>
+                <div class="d-flex gap-4">
+                    <h3 class="text-tertiary-color cursor-pointer">STATS</h3>
+                    <h3 class="text-tertiary-color cursor-pointer">RACE</h3>
+                </div>
+            </li>
+            <li style="min-width: 250px;" class="w-25 background-secondary-color rounded d-flex flex-column justify-content-center align-items-center py-4">
+                <img class="w-75 mb-5" src="assets/woman-superhero-svgrepo-com.svg" alt="">
+                <h2 class="text-primary-color">SUPERHERO</h2>
+                <div class="d-flex gap-4">
+                    <h3 class="text-tertiary-color cursor-pointer">STATS</h3>
+                    <h3 class="text-tertiary-color cursor-pointer">RACE</h3>
+                </div>
+            </li>
+        </ul>
+    </main>
 </body>
 </html>
