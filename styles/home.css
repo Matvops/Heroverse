@@ -1,44 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+body, :root {
+    --background-primary-color: #0D1117;
+    --background-secondary-color: #161B22;
+    --border-primary-color: #21262D; 
+    --primary-color: #E6EDF3; 
+    --secondary-color: #8B949E;
+    --tertiary-color: #E63946;
+    --quaternary-color: #1F6FEB;
+}
+
 .background-primary-color {
-    background-color: #0D1117;
+    background-color: var(--background-primary-color);
 }
 
 .background-secondary-color {
-    background-color: #161B22;
+    background-color: var(--background-secondary-color);
 }
 
 .border-primary-color {
-    border-color: #21262D;
+    border-color: var(--border-primary-color);
 }
 
 .shadow-primary-color {
-    box-shadow: #21262D;
+    box-shadow: var(--border-primary-color);
 }
 
 .text-primary-color {
-    color: #E6EDF3;
+    color: var(--primary-color);
 }
 
 .text-secondary-color {
-    color: #8B949E;
+    color: var(--secondary-color);
 }
 
 .text-secondary-color:hover {
-    color: #1F6FEB;
+    color: var(--quaternary-color);
 }
 
+
 .text-tertiary-color {
-    color: #E63946;
+    color: var(--tertiary-color);
 }
 
 .text-tertiary-color:hover {
-    color: #1F6FEB;
+    color: var(--quaternary-color);
+}
 
+.text-quaternary-color {
+    color: var(--quaternary-color);
 }
 
 .button-primary-color {
-    background-color: #E63946;
+    background-color: var(--tertiary-color);
 }
 
 .montserrat {
