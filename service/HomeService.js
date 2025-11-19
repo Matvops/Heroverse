@@ -8,6 +8,7 @@ window.addEventListener('load', () => {
     let input = '';
     const listHeroes = document.querySelector('#list-heroes');
     const search = document.querySelector('#search');
+    const home = document.querySelector('#home');
     const api = new ApiMain();
     let heroes = new Array();
    
@@ -68,6 +69,10 @@ window.addEventListener('load', () => {
         listHeroes.replaceChildren();
         createCardsHeroes();
     });
+
+    home.addEventListener('click', () => {
+        window.location.assign('http://127.0.0.1:5500');
+    })
 
     createCardsHeroes();
 })
