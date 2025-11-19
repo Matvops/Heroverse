@@ -42,7 +42,7 @@ window.addEventListener('load', () => {
                 const stats = document.createElement('a');
                 stats.textContent = 'Stats';
                 stats.classList.add('text-tertiary-color', 'cursor-pointer', 'text-decoration-none', 'fs-6', 'fw-light');
-                stats.setAttribute('href', `#${heroData.id}`);
+                stats.setAttribute('href', `http://127.0.0.1:5500/pages/Hero.html?id=${heroData.id}`);
                 
                 const div = document.createElement('div');
                 div.classList.add('d-flex', 'gap-3', 'justify-content-center', 'align-items-center', 'px-5');
