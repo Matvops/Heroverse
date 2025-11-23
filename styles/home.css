@@ -68,6 +68,30 @@ body, :root {
     outline: none;
 }
 
+.image-hero {
+    text-align: center;
+    margin: 5px auto;
+    box-shadow: var(--background-primary-color) 1px 1px 5px;
+    cursor: pointer;
+}
 
+.image-hero:hover {
+    width: 97%;
+    box-shadow: var(--background-primary-color) 1px 1px 70px 20px;
+    transition: all;
+    transition-duration: 200ms;
+}
+
+.image-hero:hover li  {
+    background-color: red !important;
+}   
+
+.image-hero:not(:hover) {
+    width: 90%;
+    box-shadow: var(--background-primary-color) 1px 1px 5px;
+    transition: all;
+    transition-duration: 100ms;
+    transition-timing-function: cubic-bezier(.5,.26,1,.87);
+}
 
 
