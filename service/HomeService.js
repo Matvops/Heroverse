@@ -9,6 +9,7 @@ window.addEventListener('load', () => {
     const listHeroes = document.querySelector('#list-heroes');
     const search = document.querySelector('#search');
     const home = document.querySelector('#home');
+    const body = document.querySelector('body');
     const api = new ApiMain();
     let heroes = new Array();
    
@@ -27,36 +28,40 @@ window.addEventListener('load', () => {
             }
 
             if(input == '' || heroData.name.includes(input) || heroData.race.includes(input)) {
-                const name = document.createElement('h1');
-                name.classList.add('text-primary-color', 'text-center', 'px-4', 'fs-4');
-                name.textContent = heroData.name;
+
+                const div = document.createElement('div');
+                div.classList.add('text-center', 'mx-auto');
+                div.setAttribute('style', 'width: 80%; height: 280px');
+
+                div.addEventListener('click', () => {
+                    window.location.assign(`http://127.0.0.1:5500/pages/Hero.html?id=${heroData.id}`);
+                });
 
                 const image = document.createElement('img');
-                image.classList.add('w-75', 'mb-5', 'rounded', 'shadow-sm');
+                image.classList.add('image-hero', 'rounded');
                 image.setAttribute('src', heroData.image);
+                div.appendChild(image);
+
+                
+                const name = document.createElement('h1');
+                name.classList.add('text-primary-color', 'text-center', 'px-4', 'fs-4', 'm-0', 'py-2');
+                name.textContent = heroData.name;
+
 
                 const race = document.createElement('h3');
-                race.classList.add('text-tertiary-color', 'cursor-pointer', 'fs-6', 'p-0', 'm-0', 'fw-light');
+                race.classList.add('text-tertiary-color', 'cursor-pointer', 'fs-6', 'p-0', 'fw-light', 'mb-0', 'mt-auto');
                 race.textContent = heroData.race;
 
-                const stats = document.createElement('a');
-                stats.textContent = 'Stats';
-                stats.classList.add('text-tertiary-color', 'cursor-pointer', 'text-decoration-none', 'fs-6', 'fw-light');
-                stats.setAttribute('href', `http://127.0.0.1:5500/pages/Hero.html?id=${heroData.id}`);
-                
-                const div = document.createElement('div');
-                div.classList.add('d-flex', 'gap-3', 'justify-content-center', 'align-items-center', 'px-5');
 
                 const item = document.createElement('li');
                 item.classList.add('w-25', 'background-secondary-color', 'rounded', 'd-flex', 'flex-column', 'justify-content-center', 'align-items-center', 'py-4');
                 item.style.minWidth = '100px';
                 item.style.maxWidth = '30%';
-                div.appendChild(race);
-                div.appendChild(stats);
 
-                item.appendChild(image);
-                item.appendChild(name);
+
                 item.appendChild(div);
+                item.appendChild(name);
+                item.appendChild(race);
                 cards.push(item);
                 listHeroes.appendChild(item);
             }
