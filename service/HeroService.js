@@ -47,7 +47,6 @@ window.addEventListener('load', () => {
             const id = params.get('id');
             
             const hero = await api.getById(id);
-            console.log(hero);
             fillHeroObject(hero);
 
             createElements();

@@ -9,7 +9,6 @@ window.addEventListener('load', () => {
     const listHeroes = document.querySelector('#list-heroes');
     const search = document.querySelector('#search');
     const home = document.querySelector('#home');
-    const body = document.querySelector('body');
     const api = new ApiMain();
     let heroes = new Array();
    
