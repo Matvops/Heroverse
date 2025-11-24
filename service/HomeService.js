@@ -26,8 +26,7 @@ window.addEventListener('load', () => {
                 id: hero.id,
             }
 
-            if(input == '' || heroData.name.includes(input) || heroData.race.includes(input)) {
-
+            if(input == '' || heroData.name.toUpperCase().includes(input.toUpperCase()) || heroData.race.toUpperCase().includes(input.toUpperCase())) {
                 const div = document.createElement('div');
                 div.classList.add('text-center', 'mx-auto');
                 div.setAttribute('style', 'width: 80%; height: 280px');
@@ -54,7 +53,7 @@ window.addEventListener('load', () => {
 
                 const item = document.createElement('li');
                 item.classList.add('w-25', 'background-secondary-color', 'rounded', 'd-flex', 'flex-column', 'justify-content-center', 'align-items-center', 'py-4');
-                item.style.minWidth = '100px';
+                item.style.minWidth = '200px';
                 item.style.maxWidth = '30%';
 
 
